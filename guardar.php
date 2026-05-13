@@ -9,7 +9,7 @@ $sql = "INSERT INTO pacientes (nombre, motivo_consulta, ciudad)
         VALUES ('$nombre', '$motivo_consulta', '$ciudad')";
 
 if(mysqli_query($conexion, $sql)){
-    echo "Paciente guardado con éxito. <a href='formulario.html'>Volver</a>";
+    echo "Paciente guardado con éxito. <a href='http://localhost/hospital/index.html'>Volver</a>";
 } else {
     echo "Error: " . mysqli_error($conexion);
 }
